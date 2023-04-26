@@ -20,7 +20,7 @@ console.log(artChosen);
             <h2>{ artChosen.title}</h2>
             {
                 artChosen.images.map((image) => (
-                    <img src={image.baseimageurl} style={{ width: 200 }} />
+                    <img src={image.baseimageurl} style={{ width: 200 }} key={image.imageid} />
                 ))
             }
             <h3>Description</h3>
